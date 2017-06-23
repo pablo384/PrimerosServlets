@@ -10,8 +10,12 @@ import java.io.PrintWriter;
 import java.util.Date;
 
 
-@WebServlet(name = "PrimerServlet", urlPatterns = {"/server"})
+@WebServlet(name = "/PrimerServlet", urlPatterns = {"/server"})
 public class PrimerServlet extends HttpServlet {
+    public PrimerServlet() {
+        super();
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
